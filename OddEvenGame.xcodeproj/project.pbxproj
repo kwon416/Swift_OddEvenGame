@@ -16,6 +16,10 @@
 		AC7C92A92ABBF275008E7629 /* OddEvenGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C92A82ABBF275008E7629 /* OddEvenGameTests.swift */; };
 		AC7C92B32ABBF275008E7629 /* OddEvenGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C92B22ABBF275008E7629 /* OddEvenGameUITests.swift */; };
 		AC7C92B52ABBF275008E7629 /* OddEvenGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C92B42ABBF275008E7629 /* OddEvenGameUITestsLaunchTests.swift */; };
+		ACB3B8E82AC18EB4006CE16B /* gamestart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACB3B8E52AC18EB3006CE16B /* gamestart.mp3 */; };
+		ACB3B8E92AC18EB4006CE16B /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACB3B8E62AC18EB3006CE16B /* click.mp3 */; };
+		ACB3B8EA2AC18EB4006CE16B /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACB3B8E72AC18EB3006CE16B /* intro.mp3 */; };
+		ACB3B92C2AC40F59006CE16B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3B92B2AC40F59006CE16B /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		AC7C92AE2ABBF275008E7629 /* OddEvenGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddEvenGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7C92B22ABBF275008E7629 /* OddEvenGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenGameUITests.swift; sourceTree = "<group>"; };
 		AC7C92B42ABBF275008E7629 /* OddEvenGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACB3B8E52AC18EB3006CE16B /* gamestart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gamestart.mp3; path = ../../../Downloads/mp3/gamestart.mp3; sourceTree = "<group>"; };
+		ACB3B8E62AC18EB3006CE16B /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = ../../../Downloads/mp3/click.mp3; sourceTree = "<group>"; };
+		ACB3B8E72AC18EB3006CE16B /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = intro.mp3; path = ../../../Downloads/mp3/intro.mp3; sourceTree = "<group>"; };
+		ACB3B92B2AC40F59006CE16B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		AC7C92852ABBF274008E7629 = {
 			isa = PBXGroup;
 			children = (
+				ACB3B8E42AC18E6C006CE16B /* mp3 */,
 				AC7C92902ABBF274008E7629 /* OddEvenGame */,
 				AC7C92A72ABBF275008E7629 /* OddEvenGameTests */,
 				AC7C92B12ABBF275008E7629 /* OddEvenGameUITests */,
@@ -106,6 +115,7 @@
 				AC7C929A2ABBF275008E7629 /* Assets.xcassets */,
 				AC7C929C2ABBF275008E7629 /* LaunchScreen.storyboard */,
 				AC7C929F2ABBF275008E7629 /* Info.plist */,
+				ACB3B92B2AC40F59006CE16B /* SettingViewController.swift */,
 			);
 			path = OddEvenGame;
 			sourceTree = "<group>";
@@ -125,6 +135,16 @@
 				AC7C92B42ABBF275008E7629 /* OddEvenGameUITestsLaunchTests.swift */,
 			);
 			path = OddEvenGameUITests;
+			sourceTree = "<group>";
+		};
+		ACB3B8E42AC18E6C006CE16B /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				ACB3B8E62AC18EB3006CE16B /* click.mp3 */,
+				ACB3B8E52AC18EB3006CE16B /* gamestart.mp3 */,
+				ACB3B8E72AC18EB3006CE16B /* intro.mp3 */,
+			);
+			path = mp3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7C929E2ABBF275008E7629 /* LaunchScreen.storyboard in Resources */,
+				ACB3B8E92AC18EB4006CE16B /* click.mp3 in Resources */,
 				AC7C929B2ABBF275008E7629 /* Assets.xcassets in Resources */,
 				AC7C92992ABBF274008E7629 /* Main.storyboard in Resources */,
+				ACB3B8E82AC18EB4006CE16B /* gamestart.mp3 in Resources */,
+				ACB3B8EA2AC18EB4006CE16B /* intro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +284,7 @@
 				AC7C92962ABBF274008E7629 /* ViewController.swift in Sources */,
 				AC7C92922ABBF274008E7629 /* AppDelegate.swift in Sources */,
 				AC7C92942ABBF274008E7629 /* SceneDelegate.swift in Sources */,
+				ACB3B92C2AC40F59006CE16B /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
